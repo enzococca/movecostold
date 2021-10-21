@@ -26,7 +26,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 
 # Initialize Qt resources from file resources.py
-from .resources import *
+#from .resources_rc import *
 # Import the code for the dialog
 from .movecost_dialog import MOVECOSTDialog
 import os.path
