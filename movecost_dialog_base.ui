@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>movecost</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/plugins/movecost/movecost.png</normaloff>:/plugins/movecost/movecost.png</iconset>
+  </property>
   <widget class="QPushButton" name="pushButton_movecorr_p">
    <property name="geometry">
     <rect>
@@ -257,7 +261,7 @@ background-color: rgb(255, 255, 127);</string>
   </widget>
  </widget>
  <resources>
-  <include location="../pyarchinit-pyarchinit3/resources/resources.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>
