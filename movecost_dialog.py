@@ -35,7 +35,6 @@ from qgis.core import *
 from distutils.dir_util import copy_tree
 from processing.tools.system import mkdir, userFolder
 import processing
-import pathlib
 # This loads your .ui file so that PyQt can populate your plugin with the elements from Qt Designer
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
     os.path.dirname(__file__), 'movecost_dialog_base.ui'))
@@ -105,14 +104,8 @@ class MOVECOSTDialog(QtWidgets.QDialog, FORM_CLASS):
         
         profile_home = QgsApplication.qgisSettingsDirPath()
         source_profile = os.path.join(profile_home,'python', 'plugins', 'movecost', 'rscripts')
-        source_profile2 = os.path.join(profile_home,'python', 'plugins', 'movecost-main', 'rscripts')
         rs=os.path.join(profile_home,'processing','rscripts')
 
         # The acutal "copy" with or without overwrite (update)
         ##if button_pressed == QMessageBox.Yes:
-        if source_profile.exists():
-            
-            copy_tree(source_profile,rs)
-            
-        else:
-            copy_tree(source_profile2,rs)
+        copy_tree(source_profile,rs)
