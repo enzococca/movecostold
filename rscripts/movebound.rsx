@@ -23,7 +23,7 @@ install.packages("movecost")
 
 library(sp)
 library(movecost)
-
+library(progress)
 library(raster)
 library(rgdal)
 DTM<-raster(DTM)
