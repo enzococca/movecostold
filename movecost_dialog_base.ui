@@ -260,8 +260,8 @@ background-color: rgb(255, 255, 127);</string>
    </property>
   </widget>
  </widget>
- <resources>
+ <!-- <resources>
   <include location="resources.qrc"/>
- </resources>
+ </resources> -->
  <connections/>
 </ui>
